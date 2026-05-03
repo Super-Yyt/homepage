@@ -6,17 +6,17 @@ import Skills from "../components/Skills.astro";
 import ThemeToggle from "../components/ThemeToggle.astro";
 ---
 
-<Layout title="Andy Hsu — Full Stack Developer">
+<Layout title="Zhai Shiguang — Back Stack Developer">
   <main class="mx-auto max-w-3xl px-5 sm:px-6 py-10 sm:py-14">
     {/* Top bar */}
     <header class="flex items-center justify-between mb-10 rise" style="animation-delay: 40ms;">
       <a href="/" class="flex items-center gap-2.5 decoration-none text-current">
         <img
-          src="https://nn.ci/images/avatar.svg"
-          alt="Andy Hsu"
+          src="https://dy.ci/images/avatar.svg"
+          alt="zhaishis"
           class="w-9 h-9 rounded-full ring-2 ring-brand/40 dark:ring-brand-300/40 shadow-sm"
         />
-        <span class="font-semibold tracking-tight">Andy Hsu</span>
+        <span class="font-semibold tracking-tight">zhaishis</span>
       </a>
       <nav class="flex items-center gap-2">
         <ThemeToggle />
@@ -31,7 +31,7 @@ import ThemeToggle from "../components/ThemeToggle.astro";
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
             <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
           </span>
-          Available for collaboration
+          一起合作吧！
         </span>
       </div>
 
@@ -39,19 +39,19 @@ import ThemeToggle from "../components/ThemeToggle.astro";
         class="rise mt-5 font-extrabold tracking-tight text-5xl sm:text-6xl leading-[1.05]"
         style="animation-delay: 140ms;"
       >
-        Hi, I'm <span class="text-gradient">Andy Hsu</span>.
+        Hi, I'm <span class="text-gradient">翟十光</span>.
       </h1>
 
       <p
         class="rise mt-5 text-lg leading-relaxed op-80 max-w-2xl"
         style="animation-delay: 220ms;"
       >
-        👨‍💻 <strong class="text-brand-600 dark:text-brand-300 font-semibold">Full Stack</strong> developer &nbsp;/&nbsp;
-        <code class="px-1.5 py-0.5 rounded-md bg-brand/10 text-brand-600 dark:text-brand-300 text-[0.85em] font-medium">Master</code>'s
-        student.
+        👨‍💻 <strong class="text-brand-600 dark:text-brand-300 font-semibold">Back Stack</strong> developer &nbsp;/&nbsp;
+        <code class="px-1.5 py-0.5 rounded-md bg-brand/10 text-brand-600 dark:text-brand-300 text-[0.85em] font-medium">中国</code>'s
+        学生
         <br class="hidden sm:block" />
-        The best time to plant a tree was 20 years ago. The second best time is
-        <strong class="text-brand-600 dark:text-brand-300 font-semibold">now</strong>.
+        你好！很高兴认识
+        <strong class="text-brand-600 dark:text-brand-300 font-semibold">大家</strong>.
       </p>
 
       <div class="rise mt-7" style="animation-delay: 300ms;">
@@ -64,13 +64,13 @@ import ThemeToggle from "../components/ThemeToggle.astro";
       <img
         class="w-full block dark:hidden"
         loading="lazy"
-        src="https://jsd.nn.ci/gh/xhofe/xhofe@main/out/github-snake.svg"
+	src="https://all.hlmirror.com/https://raw.githubusercontent.com/Super-Yyt/xhofe/main/out/github-snake.svg"
         alt="GitHub contributions"
       />
       <img
         class="w-full hidden dark:block"
         loading="lazy"
-        src="https://jsd.nn.ci/gh/xhofe/xhofe@main/out/github-snake-dark.svg"
+	src="https://all.hlmirror.com/https://raw.githubusercontent.com/Super-Yyt/xhofe/main/out/github-snake-dark.svg"
         alt="GitHub contributions"
       />
     </section>
@@ -87,34 +87,14 @@ import ThemeToggle from "../components/ThemeToggle.astro";
 
     {/* Footer */}
     <footer class="mt-16 pt-8 border-t border-black/5 dark:border-white/10 flex items-center justify-between text-sm op-60">
-      <p>© {new Date().getFullYear()} Andy Hsu</p>
+      <p>© {new Date().getFullYear()} 翟十光</p>
       <a
         href="#"
         onclick="window.scrollTo({top:0,behavior:'smooth'});return false;"
         class="inline-flex items-center gap-1 decoration-none text-current hover:op-100 transition-opacity"
       >
-        Back to top <span class="i-ri-arrow-up-line"></span>
+        回到顶部 <span class="i-ri-arrow-up-line"></span>
       </a>
     </footer>
-
-    <style is:inline>
-      .floatingchat-container-wrap,
-      .floating-chat-kofi-popup-iframe {
-        right: 16px;
-        left: unset;
-      }
-    </style>
-    <script
-      is:inline
-      src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
-    <script>
-      // @ts-ignore - global injected by ko-fi script
-      kofiWidgetOverlay.draw("xhofe", {
-        type: "floating-chat",
-        "floating-chat.donateButton.text": "Support Me",
-        "floating-chat.donateButton.background-color": "#7c5cff",
-        "floating-chat.donateButton.text-color": "#fff",
-      });
-    </script>
   </main>
 </Layout>
