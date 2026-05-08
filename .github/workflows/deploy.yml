@@ -4,7 +4,7 @@ on:
   push:
     branches: [ astro ]
   workflow_dispatch:
-  
+
 permissions:
   contents: read
   pages: write
@@ -14,11 +14,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout your repository using git
+      - name: Checkout repository
         uses: actions/checkout@v5
-      - name: Install, build, and upload your site
+
+      - name: Install, build, and upload site
         uses: withastro/action@v5
         with:
+          # 关键修复：允许执行依赖中的构建脚本（例如 esbuild 的 postinstall）
           install-args: '--ignore-scripts=false'
 
   deploy:
